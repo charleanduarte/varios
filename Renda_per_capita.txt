@@ -1,0 +1,23 @@
+print('-='*10)
+print('''Renda per capita''')
+print('-='*10)
+salario=float(input('Sua renda mensal? '))
+divisão = int(input('Quantas pessoas reside na casa? '))
+p = salario/divisão
+print('Seu salário é de {} R$\n e dividido por {} pessoas\ndá um total de {:.2f}R$ por pessoa'.format(salario,divisão,p))
+print('-='*18)
+resp = 'Ss'
+
+while  resp in 'Ss':
+
+    if resp !='Ss':
+        salario = float(input('Sua renda mensal? '))
+        divisão = int(input('Quantas pessoas reside na casa? '))
+        p   = salario / divisão
+        print('Seu salário é de {} R$\n e dividido por {} pessoas\ndá um total de {:.2f}R$ por pessoa'.format(salario,divisão,p))
+        print('-='*18)
+    resp=str(input(('Deseja continuar [S/N]'))).upper().strip()[0]
+print('\033[33mSeu último histórico digitado\033[m')
+print('Seu salário é de {} R$\n e dividido por {} pessoas\ndá um total de {:.2f}R$ por pessoa'.format(salario,divisão,p))
+print('\033[4;34mVolte sempre\033[m')
+
