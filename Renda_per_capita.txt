@@ -4,7 +4,7 @@ print('-='*10)
 salario=float(input('Sua renda mensal? '))
 divisão = int(input('Quantas pessoas reside na casa? '))
 p = salario/divisão
-print('Seu salário é de {} R$\n e dividido por {} pessoas\ndá um total de {:.2f}R$ por pessoa'.format(salario,divisão,p))
+print('Seu salário é de {} R$\n e dividido por {} pessoas\n dá um total de {:.2f}R$ por pessoa'.format(salario,divisão,p))
 print('-='*18)
 resp = 'Ss'
 
